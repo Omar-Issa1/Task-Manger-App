@@ -4,15 +4,20 @@ import tasks from "./routes/tasks.js";
 import connectDB from "./db/connect.js";
 import dotenv from "dotenv";
 dotenv.config();
-// middleware
-app.use(express.static("./public"));
-app.use(express.json());
+import notFound from "./middleware/not-found.js";
+import errorHandler from "./middleware/error-handler.js";
 
 //routes
 
 app.use("/api/v1/tasks", tasks);
+app.use(express.static("./public"));
 
-const port = 3000;
+// middleware
+
+app.use(express.json());
+app.use(notFound);
+app.use(errorHandler);
+const port = process.env.PORT || 3000;
 
 const start = async () => {
   try {
