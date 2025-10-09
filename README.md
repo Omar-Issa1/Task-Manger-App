@@ -1,11 +1,11 @@
-# 🧾 Task Manager API
+#  Task Manager API
 
 A clean and structured **Task Manager REST API** built with **Node.js**, **Express**, and **MongoDB**.  
 This project allows users to **create**, **read**, **update**, and **delete** tasks — demonstrating how to build a complete backend API with proper error handling, validation, and architecture.
 
 ---
 
-## 🚀 Features
+##  Features
 
 ✅ Full **CRUD operations**  
 ✅ **Validation** using both **Mongoose** and **Joi**  
@@ -16,7 +16,7 @@ This project allows users to **create**, **read**, **update**, and **delete** ta
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 - **Node.js**
 - **Express.js**
@@ -26,7 +26,7 @@ This project allows users to **create**, **read**, **update**, and **delete** ta
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Task-Manger-App/
@@ -49,7 +49,7 @@ Task-Manger-App/
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 1. **Clone the repository**
    ```bash
@@ -78,11 +78,11 @@ Task-Manger-App/
    ```
 
    Server will run on:
-   👉 [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
+    [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method   | Endpoint            | Description        |
 | -------- | ------------------- | ------------------ |
@@ -94,7 +94,7 @@ Task-Manger-App/
 
 ---
 
-## 🧩 Example Request
+##  Example Request
 
 ### POST `/api/v1/tasks`
 ```json
@@ -119,7 +119,7 @@ Task-Manger-App/
 
 ---
 
-## 💡 Highlights
+##  Highlights
 
 - Clean, modular codebase ready for scaling
 - Custom reusable error classes (`customAPIError`)
@@ -128,7 +128,7 @@ Task-Manger-App/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Omar Issa**  
 📍 Backend Developer & Node.js Enthusiast  
