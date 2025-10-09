@@ -8,13 +8,12 @@ import notFound from "./middleware/not-found.js";
 import errorHandler from "./middleware/error-handler.js";
 
 //routes
-
+app.use(express.json());
 app.use("/api/v1/tasks", tasks);
 app.use(express.static("./public"));
 
 // middleware
 
-app.use(express.json());
 app.use(notFound);
 app.use(errorHandler);
 const port = process.env.PORT || 3000;
