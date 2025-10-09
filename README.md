@@ -60,26 +60,26 @@ Task-Manger-App/
 
    ```bash
    cd Task-Manger-App
-   ```
+   ````
 
 3. Install dependencies:
 
    ```bash
    npm install
-   ```
+   ````
 
 4. Add a `.env` file with your settings:
 
    ```
    PORT=6000
    MONGO_URI=your_mongodb_connection_string
-   ```
+   ````
 
 5. Start the server:
 
    ```bash
    npm start
-   ```
+   ````
 
    The app will run at:
    👉 [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
