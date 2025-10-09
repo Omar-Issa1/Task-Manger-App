@@ -26,22 +26,26 @@ You can create, read, update, and delete tasks easily.
 
 ## 📂 Project Structure
 
+```
+
 Task-Manger-App/
 ├── controllers/
-│ └── tasks.js
+│   └── tasks.js
 ├── errors/
-│ └── custom-errors.js
+│   └── custom-errors.js
 ├── middleware/
-│ ├── async.js
-│ ├── error-handler.js
-│ └── validateTask.js
+│   ├── async.js
+│   ├── error-handler.js
+│   └── validateTask.js
 ├── models/
-│ └── Task.js
+│   └── Task.js
 ├── routes/
-│ └── tasks.js
+│   └── tasks.js
 ├── app.js
 ├── .env
-└── package.json  
+└── package.json
+
+````
 
 ---
 
