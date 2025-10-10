@@ -77,7 +77,6 @@ body {
   line-height: 1.75;
 }
 
-/* العناوين تستخدم نفس الخط العربي */
 h1,
 h2,
 h3,
@@ -91,13 +90,11 @@ h5 {
   margin: 0 0 1.38rem 0;
 }
 
-/* باقي CSS كما هو، مع تغيير var(--headingFont) و var(--bodyFont) للـ Alexandria */
 p {
   margin-bottom: 1.5rem;
   max-width: 40em;
 }
 
-/* بقية الكود بدون تغيير، مع استخدام نفس الخط */
 small,
 .text-small {
   font-size: var(--smallText);
@@ -111,8 +108,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* الأزرار، الفورم، المهام ... كلها ستظهر بالعربية بشكل صحيح */
 
 /*************
      Buttons 
@@ -206,11 +201,11 @@ textarea {
 }
 .task-form h4 {
   text-align: center;
-  font-size: 2.5rem; /* حجم الخط أكبر */
-  font-weight: 700; /* يجعل الخط غامق وواضح */
-  letter-spacing: 1.5px; /* توسيع المسافة بين الأحرف قليلاً */
-  color: var(--primary-800); /* يمكن تغيير اللون حسب الرغبة */
-  margin-bottom: 2rem; /* مسافة تحت العنوان */
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--primary-800);
+  margin-bottom: 2rem;
 }
 
 .task-form .form-alert {

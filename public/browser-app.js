@@ -69,15 +69,17 @@ tasksDOM.addEventListener("click", async (e) => {
     loadingDOM.style.visibility = "hidden";
     return;
   }
+  const taskEl = e.target.closest(".single-task");
 
-  if (nameEl) {
-    const id = nameEl.dataset.id;
+  if (taskEl) {
+    const id = taskEl.dataset.id;
     try {
       const {
         data: { data: task },
       } = await axios.get(`/api/v1/tasks/${id}`);
 
       await axios.patch(`/api/v1/tasks/${id}`, {
+        name: task.name,
         completed: !task.completed,
       });
 
