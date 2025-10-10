@@ -74,16 +74,26 @@ Task-Manger-App/
    ```
    PORT=5000
    MONGO_URI=mongodb+srv://omarEssam:Qwomar123@node-and-express-projec.0cx5aiz.mongodb.net/Task_Manger?retryWrites=true&w=majority&appName=Node-and-Express-Projects
+   PORT=5000
    ```
+
+# ⚠️ IMPORTANT: Use your own MongoDB URI to avoid sharing data with others!
+
+MONGO_URI=your_personal_mongodb_connection_string
+You can create your own MongoDB cluster for free at MongoDB Atlas
+
+or use a local MongoDB instance for private testing.
+
+````
 
 5. **Start the development server**
 
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+````
 
-   Server will run on:
-   [http://localhost:5000](http://localhost:5000)
+Server will run on:
+[http://localhost:5000](http://localhost:5000)
 
 ---
 
