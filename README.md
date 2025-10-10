@@ -77,20 +77,19 @@ Task-Manger-App/
 
    ```
 
-# ⚠️ IMPORTANT: Use your own MongoDB URI to avoid sharing data with others!
+### ⚠️ IMPORTANT: Use your own MongoDB URI to avoid sharing data with others!
 
+```
 MONGO_URI=your_personal_mongodb_connection_string
 You can create your own MongoDB cluster for free at MongoDB Atlas
-
 or use a local MongoDB instance for private testing.
-
-````
+```
 
 5. **Start the development server**
 
 ```bash
 npm start
-````
+```
 
 Server will run on:
 [http://localhost:3000](http://localhost:3000)
