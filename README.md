@@ -72,9 +72,9 @@ Task-Manger-App/
 4. **Create a `.env` file** in the root directory:
 
    ```
-   PORT=5000
+   PORT=3000
    MONGO_URI=mongodb+srv://omarEssam:Qwomar123@node-and-express-projec.0cx5aiz.mongodb.net/Task_Manger?retryWrites=true&w=majority&appName=Node-and-Express-Projects
-   PORT=5000
+
    ```
 
 # ⚠️ IMPORTANT: Use your own MongoDB URI to avoid sharing data with others!
@@ -93,7 +93,7 @@ npm start
 ````
 
 Server will run on:
-[http://localhost:5000](http://localhost:5000)
+[http://localhost:3000](http://localhost:3000)
 
 ---
 
