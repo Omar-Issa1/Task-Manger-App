@@ -1,11 +1,11 @@
-#  Task Manager API
+# Task Manager API
 
 A clean and structured **Task Manager REST API** built with **Node.js**, **Express**, and **MongoDB**.  
 This project allows users to **create**, **read**, **update**, and **delete** tasks — demonstrating how to build a complete backend API with proper error handling, validation, and architecture.
 
 ---
 
-##  Features
+## Features
 
 ✅ Full **CRUD operations**  
 ✅ **Validation** using both **Mongoose** and **Joi**  
@@ -16,7 +16,7 @@ This project allows users to **create**, **read**, **update**, and **delete** ta
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 - **Node.js**
 - **Express.js**
@@ -26,7 +26,7 @@ This project allows users to **create**, **read**, **update**, and **delete** ta
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 Task-Manger-App/
@@ -49,54 +49,60 @@ Task-Manger-App/
 
 ---
 
-##  Setup & Installation
+## Setup & Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Omar-Issa1/Task-Manger-App.git
    ```
 
 2. **Navigate to the project**
+
    ```bash
    cd Task-Manger-App
    ```
 
 3. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 4. **Create a `.env` file** in the root directory:
+
    ```
-   PORT=6000
-   MONGO_URI=your_mongodb_connection_string
+   PORT=5000
+   MONGO_URI=mongodb+srv://omarEssam:Qwomar123@node-and-express-projec.0cx5aiz.mongodb.net/Task_Manger?retryWrites=true&w=majority&appName=Node-and-Express-Projects
    ```
 
 5. **Start the development server**
+
    ```bash
    npm start
    ```
 
    Server will run on:
-    [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
+   [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
 
 ---
 
-##  API Endpoints
+## API Endpoints
 
-| Method   | Endpoint            | Description        |
-| -------- | ------------------- | ------------------ |
-| `GET`    | `/api/v1/tasks`     | Get all tasks      |
-| `POST`   | `/api/v1/tasks`     | Create a new task  |
-| `GET`    | `/api/v1/tasks/:id` | Get a single task  |
-| `PATCH`  | `/api/v1/tasks/:id` | Update a task      |
-| `DELETE` | `/api/v1/tasks/:id` | Delete a task      |
+| Method   | Endpoint            | Description       |
+| -------- | ------------------- | ----------------- |
+| `GET`    | `/api/v1/tasks`     | Get all tasks     |
+| `POST`   | `/api/v1/tasks`     | Create a new task |
+| `GET`    | `/api/v1/tasks/:id` | Get a single task |
+| `PATCH`  | `/api/v1/tasks/:id` | Update a task     |
+| `DELETE` | `/api/v1/tasks/:id` | Delete a task     |
 
 ---
 
-##  Example Request
+## Example Request
 
 ### POST `/api/v1/tasks`
+
 ```json
 {
   "name": "Finish backend project",
@@ -105,6 +111,7 @@ Task-Manger-App/
 ```
 
 ### Response:
+
 ```json
 {
   "status": "success",
@@ -119,7 +126,7 @@ Task-Manger-App/
 
 ---
 
-##  Highlights
+## Highlights
 
 - Clean, modular codebase ready for scaling
 - Custom reusable error classes (`customAPIError`)
@@ -128,7 +135,7 @@ Task-Manger-App/
 
 ---
 
-##  Author
+## Author
 
 **Omar Issa**  
 📍 Backend Developer & Node.js Enthusiast  
@@ -137,6 +144,6 @@ Task-Manger-App/
 
 ---
 
-##  License
+## License
 
 This project is open source under the [MIT License](LICENSE).
