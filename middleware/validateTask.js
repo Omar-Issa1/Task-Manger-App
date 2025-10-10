@@ -3,7 +3,7 @@ import Joi from "joi";
 const taskSchema = Joi.object({
   name: Joi.string().max(150),
   completed: Joi.boolean(),
-}).or("name", "completed"); // لازم يوجد واحد منهم على الأقل
+}).or("name", "completed");
 
 const validateTask = (req, res, next) => {
   const { error } = taskSchema.validate(req.body);
