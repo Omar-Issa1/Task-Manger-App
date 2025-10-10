@@ -83,7 +83,7 @@ Task-Manger-App/
    ```
 
    Server will run on:
-   [http://localhost:6000/api/v1/tasks](http://localhost:6000/api/v1/tasks)
+   [http://localhost:5000](http://localhost:5000)
 
 ---
 
