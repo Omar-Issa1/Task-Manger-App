@@ -1,18 +1,19 @@
 # Task Manager API
 
-A clean and structured **Task Manager REST API** built with **Node.js**, **Express**, and **MongoDB**.  
-This project allows users to **create**, **read**, **update**, and **delete** tasks — demonstrating how to build a complete backend API with proper error handling, validation, and architecture.
-
+A clean and structured Task Manager REST API built with Node.js, Express, and MongoDB, and now deployed on Vercel with automated Uptime monitoring.
+This project demonstrates how to build, deploy, and keep alive a production-ready backend with health checks and proper error handling.
 ---
 
 ## Features
 
-✅ Full **CRUD operations**  
-✅ **Validation** using both **Mongoose** and **Joi**  
-✅ **Custom error handling** with centralized middleware  
-✅ **Async wrapper** for cleaner controller logic  
-✅ **Environment variables** with `.env`  
-✅ Organized **MVC-like structure**
+✅ Full CRUD operations
+✅ Validation using Mongoose and Joi
+✅ Custom error handling middleware
+✅ Async wrapper for cleaner controller logic
+✅ Environment variables via .env
+✅ Organized MVC-like structure
+✅ Health check endpoint for uptime monitoring
+✅ Deployed on Vercel with Ping Job (UptimeRobot) to prevent cold starts
 
 ---
 
@@ -23,6 +24,8 @@ This project allows users to **create**, **read**, **update**, and **delete** ta
 - **MongoDB** with **Mongoose**
 - **Joi** for schema validation
 - **dotenv** for environment management
+- **Vercel** for deployment
+- **UptimeRobo** for automated health monitoring
 
 ---
 
@@ -37,12 +40,19 @@ Task-Manger-App/
 ├── middleware/
 │   ├── async.js
 │   ├── error-handler.js
+│   ├── not-found.js
 │   └── validateTask.js
 ├── models/
 │   └── Task.js
 ├── routes/
-│   └── tasks.js
-├── app.js
+│   ├── tasks.js
+│   └── health.js
+├── db/
+│   └── connect.js
+├── public/
+│   └── index.html
+├── api/
+│   └── app.js
 ├── .env
 └── package.json
 ```
@@ -73,7 +83,7 @@ Task-Manger-App/
 
    ```
    PORT=3000
-   MONGO_URI=mongodb+srv://omarEssam:Qwomar123@node-and-express-projec.0cx5aiz.mongodb.net/Task_Manger?retryWrites=true&w=majority&appName=Node-and-Express-Projects
+   MONGO_URI=your_personal_mongodb_connection_string
 
    ```
 
@@ -93,6 +103,39 @@ npm start
 
 Server will run on:
 [http://localhost:3000](http://localhost:3000)
+
+---
+## Deployment (Vercel)
+
+This project is fully deployable on Vercel.
+You can view the live version here:
+[🔗 Task Manager API – Live Demo]([http://localhost:3000](https://task-manger-app-five.vercel.app/))
+
+---
+
+## Health Check
+
+Health route to verify uptime and database connection:
+```
+GET /api/health
+```
+Example Response:
+```
+{
+  "status": "ok",
+  "uptime": 12453.98,
+  "database": "connected",
+  "timestamp": "2025-10-15T15:25:34.123Z"
+}
+```
+---
+
+## Uptime Monitoring
+
+This API uses UptimeRobot to keep the backend awake and monitor availability.
+
+Status Page:
+[https://stats.uptimerobot.com/yQQNN5akez?utm_source=chatgpt.com]([http://localhost:3000](https://task-manger-app-five.vercel.app/)](https://stats.uptimerobot.com/yQQNN5akez?utm_source=chatgpt.com))
 
 ---
 
@@ -156,3 +199,4 @@ Server will run on:
 ## License
 
 This project is open source under the [MIT License](LICENSE).
+
