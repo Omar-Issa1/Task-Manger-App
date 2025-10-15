@@ -6,6 +6,7 @@ import notFound from "../middleware/not-found.js";
 import errorHandler from "../middleware/error-handler.js";
 import path from "path";
 import { fileURLToPath } from "url";
+import health from "../routes/health.js";
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "../public")));
 
 // Routes
+app.use("/api/health", health);
 app.use("/api/v1/tasks", tasks);
 
 // Middleware
