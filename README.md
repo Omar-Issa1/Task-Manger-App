@@ -184,6 +184,7 @@ Status Page:
 - Custom reusable error classes (`customAPIError`)
 - Uses `asyncWrapper` to handle async/await errors elegantly
 - Implements `validateTask` middleware for request validation
+- Deployed on Vercel with auto health checks
 
 ---
 
@@ -199,5 +200,6 @@ Status Page:
 ## License
 
 This project is open source under the [MIT License](LICENSE).
+
 
 
