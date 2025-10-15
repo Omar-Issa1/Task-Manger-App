@@ -23,14 +23,21 @@ app.use("/api/v1/tasks", tasks);
 app.use(notFound);
 app.use(errorHandler);
 
+// Start server only if DB is connected
 let isConnected = false;
 
 export default async function handler(req, res) {
-  if (!isConnected) {
-    await connectDB(process.env.MONGO_URI);
-    isConnected = true;
-    console.log("Connected to MongoDB Atlas");
-  }
+  try {
+    if (!isConnected) {
+      await connectDB(process.env.MONGO_URI);
+      isConnected = true;
+      console.log("✅ Connected to MongoDB Atlas");
+    }
 
-  return app(req, res);
+    // Pass the request to express
+    return app(req, res);
+  } catch (err) {
+    console.error("❌ Database connection error:", err);
+    return res.status(500).json({ message: "Database connection failed." });
+  }
 }
