@@ -109,7 +109,7 @@ Server will run on:
 
 This project is fully deployable on Vercel.
 You can view the live version here:
-[🔗 Task Manager API – Live Demo]([http://localhost:3000](https://task-manger-app-five.vercel.app/))
+[Task Manager API – Live Demo](https://task-manger-app-five.vercel.app)
 
 ---
 
@@ -135,7 +135,7 @@ Example Response:
 This API uses UptimeRobot to keep the backend awake and monitor availability.
 
 Status Page:
-[https://stats.uptimerobot.com/yQQNN5akez?utm_source=chatgpt.com]([http://localhost:3000](https://task-manger-app-five.vercel.app/)](https://stats.uptimerobot.com/yQQNN5akez?utm_source=chatgpt.com))
+[https://stats.uptimerobot.com/yQQNN5akez?utm](https://stats.uptimerobot.com/yQQNN5akez?utm)
 
 ---
 
@@ -199,4 +199,5 @@ Status Page:
 ## License
 
 This project is open source under the [MIT License](LICENSE).
+
 
